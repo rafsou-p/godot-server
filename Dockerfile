@@ -11,4 +11,4 @@ COPY server.gd /app/server.gd
 WORKDIR /app
 
 # Exécuter le serveur
-CMD ["../Godot_v4.0-stable_linux_headless.64", "--script", "server.gd"]
+CMD ["../Godot_v4.0-stable_linux_headless.64", "--script", "server.gd", "--verbose"]
