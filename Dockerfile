@@ -13,4 +13,8 @@ COPY server.gd /app/server.gd
 WORKDIR /app
 
 # Exécuter le serveur Godot
-CMD ["./Godot_v4.0-stable_linux_headless.64", "--script", "server.gd"]
+COPY start.sh /app/start.sh
+RUN chmod +x /app/start.sh
+CMD ["/app/start.sh"]
+
+#CMD ["./Godot_v4.0-stable_linux_headless.64", "--script", "server.gd"]
