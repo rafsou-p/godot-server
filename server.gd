@@ -4,7 +4,7 @@ var server = WebSocketServer.new()
 var compteur = 0
 
 func _ready():
-    server.listen(8080, ["*"])  # Démarre sur le port 8080
+    server.listen(8080, ["*"])  # Démarre le serveur sur le port 8080
     print("Serveur lancé sur Railway!")
 
 func _process(delta):
